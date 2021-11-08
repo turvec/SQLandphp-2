@@ -37,8 +37,8 @@ $details = $connection->query($query);
                 <tr>
                     <td><?php echo $details=['name'] ?></td>
                     <td><?php echo $details=['amount'] ?></td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="change.php"></a> Change</td>
+                    <td><a href=""></a> Delete</td>
                 </tr>
                 <?php }?>
             </tbody>
