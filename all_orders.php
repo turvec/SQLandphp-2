@@ -23,7 +23,7 @@ $details = $connection->query($query);
 <body>
     <h2>PLACE AN ORDER</h2>
     <center>
-        <table class="table table-hover table-bordered" style="">
+        <table class="table table-hover table-bordered" style="width:70%">
             <thead>
                 <tr>
                     <th>Name Of Order</th>
@@ -43,6 +43,7 @@ $details = $connection->query($query);
                 <?php }?>
             </tbody>
         </table>
+        <button class="btn btn-success" ><a href="index.php"></a>PLACE AN ORDER</button>
     </center>
 </body>
 
