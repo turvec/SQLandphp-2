@@ -1,3 +1,13 @@
+<?php
+include_once "connection.php"
+
+$id = $_GET['id']
+$query = "SELECT * from order where id = '$id'";
+$details = $connection->query($query);
+$details = $details->fetch_assoc();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,13 +25,14 @@
     <center>
         <h3 class="text-success">Change Order</h3>
 
-        <form class="card card-body mt-5" action="add_to_database.php" method="post" style="width:50%;">
+        <form class="card card-body mt-5" action="change_action.php" method="post" style="width:50%;">
             <div class="form-group">
                 <label class="text-success" for="">Name of Product</label>
-                <input class="form-control" name="name" type="text">
+                <input value="<?php echo $details['name'] ?>" class="form-control" name="name" type="text">
                 <label class="text-success" for="">Amount</label>
-                <input class="form-control" name="amount" type="text">
+                <input value="<?php echo $details['amount'] ?>" class="form-control" name="amount" type="text">
             </div>
+            <input value="<?php echo $details['id'] ?>" class="form-control" name="name" type="hidden">
             <button class="btn btn-outline-success">SUBMIT</button>
         </form>
     </center>

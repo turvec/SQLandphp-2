@@ -2,7 +2,7 @@
 
 include_once "connection.php";
 
-$query = "SELECT * from amount";
+$query = "SELECT * from order";
 
 $details = $connection->query($query);
 
@@ -35,9 +35,9 @@ $details = $connection->query($query);
             <tbody>
                 <?php while ($detail = $details->fetch_assoc()) {?>
                 <tr>
-                    <td><?php echo $details=['name'] ?></td>
-                    <td><?php echo $details=['amount'] ?></td>
-                    <td><a href="change.php"></a> Change</td>
+                    <td><?php echo $detail=['name'] ?></td>
+                    <td><?php echo $detail=['amount'] ?></td>
+                    <td><a href="change.php?id=<?php echo $detail=['id'] ?>"></a> Change</td>
                     <td><a href=""></a> Delete</td>
                 </tr>
                 <?php }?>

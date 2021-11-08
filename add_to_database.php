@@ -5,8 +5,6 @@ include_once "connection.php";
 
 $name = $_POST['name'];
 $amount = $_POST['amount'];
-echo "   ".$name;
-echo "   ".$amount;
 
 $query="INSERT into order (name,amount)
 VALUES('$name','$amount')";
