@@ -1,7 +1,7 @@
 <?php
-include_once "connection.php"
+include_once "connection.php";
 
-$id = $_GET['id']
+$id = $_GET['id'];
 $query = "SELECT * from order where id = '$id'";
 $details = $connection->query($query);
 $details = $details->fetch_assoc();
@@ -32,7 +32,7 @@ $details = $details->fetch_assoc();
                 <label class="text-success" for="">Amount</label>
                 <input value="<?php echo $details['amount'] ?>" class="form-control" name="amount" type="text">
             </div>
-            <input value="<?php echo $details['id'] ?>" class="form-control" name="name" type="hidden">
+            <input value="<?php echo $details['id'] ?>" class="form-control" name="id" type="hidden">
             <button class="btn btn-outline-success">SUBMIT</button>
         </form>
     </center>

@@ -24,8 +24,10 @@
             </div>
             <button class="btn btn-outline-success">SUBMIT</button>
         </form>
-    </center>
 
+
+    </center>
+    <button class="btn btn-success mt-3"><a href="all_orders.php"></a>View all orders</button>
 </body>
 
 </html>

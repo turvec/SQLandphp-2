@@ -43,7 +43,7 @@ $details = $connection->query($query);
                 <?php }?>
             </tbody>
         </table>
-        <button class="btn btn-success" ><a href="index.php"></a>PLACE AN ORDER</button>
+        <button class="btn btn-success mt-3" ><a href="index.php"></a>PLACE AN ORDER</button>
     </center>
 </body>
 
