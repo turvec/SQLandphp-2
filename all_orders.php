@@ -37,13 +37,16 @@ $details = $connection->query($query);
                 <tr>
                     <td><?php echo $detail['name'] ?></td>
                     <td><?php echo $detail['amount'] ?></td>
-                    <td><a href="change.php?id=<?php echo $detail['id'] ?>"></a> Change</td>
-                    <td><a href=""></a> Delete</td>
+                    <td><a href="change.php?id=<?php echo $detail['id'] ?>"> Change</a></td>
+                    <td><a href="delete.php?id=<?php echo $detail['id'] ?>">Delete</a> </td>
                 </tr>
                 <?php }?>
             </tbody>
         </table>
-        <button class="btn btn-success mt-3" ><a href="index.php"></a>PLACE AN ORDER</button>
+        <a href="index.php">
+            <button class="btn btn-success mt-3">PLACE AN ORDER</button>
+        </a>
+
     </center>
 </body>
 
