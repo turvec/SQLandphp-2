@@ -27,7 +27,10 @@
 
 
     </center>
-    <button class="btn btn-success mt-3"><a href="all_orders.php"></a>View all orders</button>
+    <a href="all_orders.php">
+        <button class="btn btn-success mt-3">View all orders</button>
+    </a>
+
 </body>
 
 </html>
