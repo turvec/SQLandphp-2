@@ -44,7 +44,7 @@ $details = $connection->query($query);
             </tbody>
         </table>
         <a href="index.php">
-            <button class="btn btn-success mt-3">PLACE AN ORDER</button>
+            <button class="btn btn-success mt-3">PLACE MORE ORDER</button>
         </a>
 
     </center>
