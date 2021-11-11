@@ -22,11 +22,11 @@
                 <label class="text-success" for="">Amount</label>
                 <input class="form-control" name="amount" type="text">
             </div>
-            <button class="btn btn-outline-success">SUBMIT</button>
+            <button  class="btn btn-outline-success">SUBMIT</button>
         </form>
     </center>
     <a href="all_orders.php">
-        <button class="btn btn-success mt-3">View all orders</button>
+        <button class="btn btn-success mt-3">VIEW ALL ORDERS</button>
     </a>
 
 </body>
